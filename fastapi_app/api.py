@@ -34,7 +34,8 @@ class DependencyOverrider:
                 del self._app.dependency_overrides[dep]
                 
 async def temporal_client() -> Client:
-    return await Client.connect("localhost:7233")
+    raise Exception("This is a local client!")
+    # return await Client.connect("localhost:7233")
 
 TemporalClient = Annotated[Client, Depends(temporal_client)]
 

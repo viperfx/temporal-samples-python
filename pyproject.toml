@@ -43,7 +43,7 @@ dependencies = { gevent = { version = "^23.9.1", python = ">=3.8" } }
 
 [tool.poetry.group.fastapi]
 optional = true
-dependencies = { fastapi = { version = "^0.109.0", python = ">=3.8" }, httpx = {version = "^0.25.0", python = ">=3.8" }}
+dependencies = { fastapi = { version = "^0.109.0", python = ">=3.8" }, httpx = {version = "^0.25.0", python = ">=3.8" }, uvicorn = { extras = ["standard"], version = "^0.23.2", python = ">=3.8" }}
 
 [tool.poetry.group.open_telemetry]
 optional = true
